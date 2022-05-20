@@ -27,12 +27,6 @@ const SchoolDetails = () => {
             })
     }
 
-    const back = () => {
-        navigate('/search')
-    }
-
-
-
     return (
         <div className='school-details-container'>
             <div className='school-details'>
@@ -47,12 +41,6 @@ const SchoolDetails = () => {
                     reviews={school.review_docs.length}
                     average={school.avgRating}
                 />}
-
-                {/* DESPLEGAR REVIEWS DE LA ESCUELA EN EL SIGUIENTE COMPONENTE */}
-                {/* {schools?.map((school, i) => (
-                    <SchoolReviews/>
-                ))} */}
-
                 {user ? <Link to={`/create-review/${id}`}><div className='btn-evaluar'><button><i className="fa-regular fa-star"></i>Evaluar este establecimiento</button></div></Link> : ''}
                 <div>
                     {school?.review_docs?.map((review, i) =>
@@ -74,9 +62,6 @@ const SchoolDetails = () => {
                     }
                 </div>
             </div>
-
-
-
         </div>
     );
 }

@@ -5,7 +5,6 @@ import EditReview from '../components/EditReview';
 
 const ViewEditReview = () => {
 
-
     const [review, setReview] = useState();
     const { id } = useParams();
     const navigate = useNavigate();
@@ -18,13 +17,11 @@ const ViewEditReview = () => {
             .catch(err => console.log(err))
     }, []);
 
-
-
     const editReview = (values) => {
         console.log(values)
         let valoresPromedio = [values.sueldo + values.entregamateriales + values.ambientedetrabajo + values.liderazgo + values.respetoalosfuncionarios];
         let sum = valoresPromedio.reduce((previous, current) => current += previous);
-        let promedioUpdate= (sum/5)
+        let promedioUpdate = (sum / 5)
         axios.put('http://localhost:8000/api/review/update/' + id,
             {
                 cargo: values.cargo,
@@ -53,9 +50,6 @@ const ViewEditReview = () => {
                 setErrors(errorArr);
             })
     }
-
-
-
 
     return (
         <div>

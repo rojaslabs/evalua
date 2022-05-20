@@ -5,13 +5,11 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { useUser } from '../contexts/userContext';
 
-
 const RegisterLogin = () => {
     const { setUser } = useUser();
     const [errors, setErrors] = useState([]);
     const [errorsR, setErrorsR] = useState([]);
     const navigate = useNavigate();
-
 
     const registerUser = values => {
         console.log("hola")
@@ -67,7 +65,6 @@ const RegisterLogin = () => {
                 setErrors(errorArr);
             })
     }
-
 
     return (
         <div className='register-login-container'>

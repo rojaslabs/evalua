@@ -12,7 +12,7 @@ const ReviewForm = () => {
     const [errores, setErrores] = useState([]);
     const { user, setUser } = useUser();
     const [promedio, setPromedio] = useState(0);
-    const [school,setSchool] = useState();
+    const [school, setSchool] = useState();
 
     console.log(promedio)
 
@@ -24,21 +24,23 @@ const ReviewForm = () => {
         console.log(newReview)
         let valoresPromedio = [newReview.sueldo + newReview.entregamateriales + newReview.ambientedetrabajo + newReview.liderazgo + newReview.respetoalosfuncionarios];
         let sum = valoresPromedio.reduce((previous, current) => current += previous);
-        let promedioActualizado = (sum/5)
-        axios.post(`http://localhost:8000/api/review/create`, {cargo : newReview.cargo, experiencia: newReview.experiencia,
-                                                                comentario: newReview.comentario,lobueno: newReview.lobueno,
-                                                                lomalo: newReview.lomalo, sueldo: newReview.sueldo,
-                                                                entregamateriales: newReview.entregamateriales,
-                                                                ambientedetrabajo: newReview.ambientedetrabajo,
-                                                                liderazgo: newReview.liderazgo,
-                                                                respetoalosfuncionarios: newReview.respetoalosfuncionarios,
-                                                                promedio: promedioActualizado.toFixed(1) , author : user._id})
+        let promedioActualizado = (sum / 5)
+        axios.post(`http://localhost:8000/api/review/create`, {
+            cargo: newReview.cargo, experiencia: newReview.experiencia,
+            comentario: newReview.comentario, lobueno: newReview.lobueno,
+            lomalo: newReview.lomalo, sueldo: newReview.sueldo,
+            entregamateriales: newReview.entregamateriales,
+            ambientedetrabajo: newReview.ambientedetrabajo,
+            liderazgo: newReview.liderazgo,
+            respetoalosfuncionarios: newReview.respetoalosfuncionarios,
+            promedio: promedioActualizado.toFixed(1), author: user._id
+        })
             .then(res => {
                 console.log(res)
                 axios.put('http://localhost:8000/api/school/update/' + id, { reviews: [...school.reviews, res.data.newReview] })
-                .then(res => {
-                    console.log(res);
-                });
+                    .then(res => {
+                        console.log(res);
+                    });
                 back()
             })
             .catch(err => {
@@ -195,7 +197,6 @@ const ReviewForm = () => {
                             </div>
                             {errores?.map((error, i) => <p className='error' key={i}>{error}</p>)}
                         </div>
-
                     );
                 }}
             </Formik>

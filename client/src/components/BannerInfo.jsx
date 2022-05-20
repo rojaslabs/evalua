@@ -6,7 +6,7 @@ const BannerInfo = () => {
         <div>
             <div className='banner'>
                 <p className='banner-message'>
-                    Bienvenidos al sistema de <br/>evaluación de clima laboral escolar
+                    Bienvenidos al sistema de <br />evaluación de clima laboral escolar
                 </p>
             </div>
             <div className='info'>
@@ -18,7 +18,7 @@ const BannerInfo = () => {
                         <p>Sabemos que los equipos de trabajo que cuentan con herramientas adecuadas, trato respetuoso, etica profesional pueden influir directamente en los estudiantes, permitiendo una mejor educación y mejor bienestar emocional para nuestros estudiantes.</p>
                     </div>
                     <div>
-                        <img src={info}/>
+                        <img src={info} />
                     </div>
                 </div>
             </div>
