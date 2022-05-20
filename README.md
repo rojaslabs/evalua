@@ -1,4 +1,4 @@
-# Evalua
+# evalua
 
 "Evalúa" is a MERN fullstack project.
 
