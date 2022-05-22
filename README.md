@@ -16,4 +16,3 @@ There is a user login and registration, filters to sort schools according to the
 ![evalua-preview-4](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-4.png?raw=true)
 ![evalua-preview-5](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-5.png?raw=true)
 ![evalua-preview-6](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-6.png?raw=true)
-![evalua-preview-7](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-7.png?raw=true)
