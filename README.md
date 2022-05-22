@@ -10,6 +10,10 @@ There is a user login and registration, filters to sort schools according to the
 
 :point_right: [Live preview](http://ec2-54-83-122-169.compute-1.amazonaws.com)
 
-![evalua-preview-1](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-1.png?raw=true)\
+![evalua-preview-1](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-1.png?raw=true)
 ![evalua-preview-2](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-2.png?raw=true)
 ![evalua-preview-3](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-3.png?raw=true)
+![evalua-preview-4](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-4.png?raw=true)
+![evalua-preview-5](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-5.png?raw=true)
+![evalua-preview-6](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-6.png?raw=true)
+![evalua-preview-7](https://github.com/rojaslabs/evalua/blob/main/evalua-preview-7.png?raw=true)
